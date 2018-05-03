@@ -43,7 +43,7 @@ if not lite:
         import phonenumbers.tzdata
     except ImportError:
         lite = True
-
+lite = True
 # Various parameters depend on whether we are the lite package or not
 if lite:
     pkgname = 'phonenumberslite'
