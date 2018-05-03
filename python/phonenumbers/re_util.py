@@ -21,7 +21,7 @@ with Java regular expression code.
 >>> m.end()
 1
 """
-import re
+import regex as re
 
 
 def fullmatch(pattern, string, flags=0):
