@@ -16,7 +16,10 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-import regex as re
+try:
+    import regex as re
+except ImportError:
+    import re
 
 # Extra regexp function; see README
 from .re_util import fullmatch

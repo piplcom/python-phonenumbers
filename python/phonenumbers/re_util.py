@@ -21,7 +21,10 @@ with Java regular expression code.
 >>> m.end()
 1
 """
-import regex as re
+try:
+    import regex as re
+except ImportError:
+    import re
 
 
 def fullmatch(pattern, string, flags=0):
